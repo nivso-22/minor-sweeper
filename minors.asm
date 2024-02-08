@@ -328,7 +328,17 @@ ret
 endp readmouse
 
 proc leftclick
+pusha
 mov [hover_color], 4h
+call getindex
+mov si, [index_in_board]
+
+
+mov [si], 0dh         ; Move the result back to CX
+
+    ; Prepare AX and DX for the next divisio
+
+popa
 ret
 endp leftclick
 
