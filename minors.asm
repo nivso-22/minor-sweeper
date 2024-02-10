@@ -1,9 +1,10 @@
-.386
+
+.586
 IDEAL
 MODEL small
 STACK 100h
-p186
 jumps
+p186
 DATASEG
 board dw 0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h
 dw 0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h
@@ -43,6 +44,9 @@ mouse_state dw 0
 ten dw 10
 
 index_in_board dw 0
+has_flag dw 0
+x_flag db 0
+y_flag db 0
 CODESEG
 proc printboard
     pusha                  ; Save all general-purpose registers
@@ -93,6 +97,20 @@ popa
 ret
 endp draw_pixel
 
+proc draw_pixel_flag
+pusha
+
+    xor bh, bh  ; bh = 0
+    add dl, [y_flag]
+    add cl, [x_flag]
+    mov ax, [color]
+    mov ah, 0ch
+    int 10h
+popa 
+ret
+endp draw_pixel_flag
+
+
 proc draw_tile
 ;hang on tight you sombiches
 pusha
@@ -125,7 +143,17 @@ right_click:
 call rightclick
 jmp begin
 not_hover:
+
+call getindex
 mov [hover_color], 8h
+mov si, [index_in_board]
+mov ax, [si]
+cmp ax, 0dh
+je revealed
+jmp begin
+revealed:
+mov [hover_color], 7h
+
 
 begin:
 mov cx, 10d
@@ -290,9 +318,10 @@ inc [tile]
 loop line_10
 
 sub [tile], 90ah
+
 popa
 ret
-endp draw_tile
+endp draw_tile 
 
 proc draw_board
 pusha
@@ -332,12 +361,8 @@ pusha
 mov [hover_color], 4h
 call getindex
 mov si, [index_in_board]
-
-
-mov [si], 0dh         ; Move the result back to CX
-
-    ; Prepare AX and DX for the next divisio
-
+mov ax, 0dh
+mov [si], ax         ;
 popa
 ret
 endp leftclick
@@ -347,12 +372,8 @@ pusha
 mov [hover_color], 9h
 call getindex
 mov si, [index_in_board]
-
-
-mov [si], 0eh         ; Move the result back to CX
-
-    ; Prepare AX and DX for the next divisio
-
+mov ax, 0eh
+mov [si], ax         
 popa
 ret
 endp rightclick
@@ -383,11 +404,52 @@ add si, cx
 add si, bx
 add si, bx
 
-mov [si], cx
 mov [index_in_board], si
+mov si, 0h
 popa
 ret
 endp getindex
+
+proc waitforchar
+mov ah, 0h
+int 16h
+ret
+endp waitforchar
+
+proc drawflag
+popa
+
+    add [x_flag], 3
+    mov [color], 4h
+    call draw_pixel_flag
+    inc [x_flag]
+    call draw_pixel_flag
+    dec [y_flag]
+    call draw_pixel_flag
+    mov [color], 14h
+    inc [x_flag]
+    call draw_pixel_flag
+    inc [y_flag]
+    call draw_pixel_flag
+    inc [y_flag]
+    call draw_pixel_flag
+    inc [y_flag]
+    call draw_pixel_flag
+    inc [y_flag]
+    call draw_pixel_flag
+    inc [y_flag]
+    call draw_pixel_flag
+    inc [x_flag]
+    call draw_pixel_flag
+    inc [x_flag]
+    call draw_pixel_flag
+    sub [x_flag], 3
+    call draw_pixel_flag
+    dec [x_flag]
+    call draw_pixel_flag
+    pusha
+ret
+endp drawflag
 
 
 start:
@@ -415,6 +477,7 @@ gameloop:
     mov ax, 2h
     int 10h
     call printboard
+    call waitforchar
 exit:
     mov ax, 4c00h
     int 21h
