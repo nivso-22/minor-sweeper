@@ -1,10 +1,9 @@
-
 .586
 IDEAL
 MODEL small
 STACK 100h
 jumps
-p186
+
 DATASEG
 board dw 0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h
 dw 0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h
@@ -42,11 +41,17 @@ read_x db 0
 read_y db 0
 mouse_state dw 0
 ten dw 10
+rnd dw 0
 
 index_in_board dw 0
 has_flag dw 0
 x_flag db 0
 y_flag db 0
+
+mineplaced  dw 0
+newmineplaced dw 0
+minesplaced dw 0
+
 CODESEG
 proc printboard
     pusha                  ; Save all general-purpose registers
@@ -80,6 +85,75 @@ row_loop:
     endp printboard
     
     
+proc random
+; generates a random number and keeps it in rnd
+    pusha
+; put segment number in register es
+    mov ah, 0h
+    int 1ah
+    ;mov ax, 40h
+    ;mov es, ax
+; move random number to ax
+    ;mov ax, [es:6Ch]
+    mov ax, dx
+    xor dx, dx
+    div [ten]
+    ;mov dh, 0h
+    mov [rnd], dx
+    popa    
+    ret
+endp random
+
+    
+proc placemine
+pusha
+    mov ax,[newmineplaced]
+    mov [mineplaced], ax
+    mov si, offset board; only god knows what this does and we dont even know if he exists so ( ? ???)?
+    call random
+    mov bx ,[rnd]
+    shl bx,1
+    call readmouse
+    mov bl, [read_x]
+    mov ax , bx
+    xor dx, dx
+    ;mul [read_y]
+    ;and al, 0fh 
+    ;xor dx, dx
+    ;mul [rnd]
+    ;xor dx, dx
+    
+    shl ax, 2
+    shr [rnd], 2
+    add ax, [rnd]
+    add si, ax
+    mov [newmineplaced], si
+
+;mov dl, [rnd]
+;add si, dx
+mov [si], 0dh
+popa
+ret
+endp placemine
+
+proc placemines
+pusha
+
+l1:
+call draw_board
+call placemine
+mov ax, [newmineplaced]
+cmp ax, [mineplaced]
+jne newmine
+jmp l1
+newmine:
+inc [minesplaced]
+cmp [minesplaced], 20
+jl l1
+
+popa
+ret
+endp placemines
     
     
 proc draw_pixel
@@ -372,7 +446,9 @@ pusha
 mov [hover_color], 9h
 call getindex
 mov si, [index_in_board]
-mov ax, 0eh
+mov bx, si
+mov al, 0eh
+mov ah, bh
 mov [si], ax         
 popa
 ret
@@ -467,7 +543,9 @@ start:
     ;call draw_tile
    
     
+    call placemines
 gameloop:
+    ;call placemine
     call draw_board
     call readmouse
     cmp [mouse_state], 3
@@ -478,7 +556,8 @@ gameloop:
     int 10h
     call printboard
     call waitforchar
+    ;call placemine
 exit:
     mov ax, 4c00h
     int 21h
-END start
+    END start
