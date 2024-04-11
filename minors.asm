@@ -6,27 +6,27 @@ jumps
 
 DATASEG
 board dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0f000h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0f000h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0ff00h, 0ff00h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
 dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
 dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h,
+dw 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0f000h, 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 
+dw 0f000h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
  
-
+str1 dw 'k', 13,10,'$'
  
 
 
@@ -55,7 +55,11 @@ y_flag db 0
 
 mineplaced  dw 0
 newmineplaced dw 0
-minesplaced dw 0
+minesplaced db 0d
+
+x_dig db 0
+y_dig db 0
+num_color dw 0
 
 CODESEG
 proc printboard
@@ -93,7 +97,7 @@ row_loop:
 proc random
 ; generates a random number and keeps it in rnd
     pusha
-; put segment number in register es
+
     mov ah, 0h
     int 1ah
     ;mov ax, 40h
@@ -191,6 +195,311 @@ popa
 ret
 endp draw_pixel_flag
 
+proc draw_pixel_digit;lord forgive me for im about to sin
+pusha
+
+    xor bh, bh
+    xor cx, cx
+    xor dx, dx
+    mov dl, [y_dig]
+    mov cl, [x_dig]
+    mov ax, [num_color]
+    mov ah, 0ch
+    int 10h
+popa 
+ret
+endp draw_pixel_digit
+
+;; prepare your skull emojis
+
+proc d1
+add [x_dig], 3
+add [y_dig], 3
+call draw_pixel_digit
+add [y_dig], 1
+call draw_pixel_digit
+dec [x_dig]
+call draw_pixel_digit
+inc [x_dig]
+inc [y_dig]
+call draw_pixel_digit
+inc [y_dig]
+call draw_pixel_digit
+inc [y_dig]
+call draw_pixel_digit
+dec [x_dig]
+inc [y_dig]
+call draw_pixel_digit
+inc [x_dig]
+call draw_pixel_digit
+inc [x_dig]
+call draw_pixel_digit
+ret
+endp d1
+
+proc d2
+add [x_dig], 3
+add [y_dig], 3
+call draw_pixel_digit
+inc [x_dig]
+dec [y_dig]
+call draw_pixel_digit
+inc [x_dig]
+call draw_pixel_digit
+inc [x_dig]
+inc [y_dig]
+call draw_pixel_digit
+dec [x_dig]
+inc [y_dig]
+call draw_pixel_digit
+dec [x_dig]
+inc [y_dig]
+call draw_pixel_digit
+dec [x_dig]
+inc [y_dig]
+call draw_pixel_digit
+inc [x_dig]
+call draw_pixel_digit
+inc [x_dig]
+call draw_pixel_digit
+inc [x_dig]
+call draw_pixel_digit
+ret
+endp d2
+
+proc d3
+add [x_dig], 3
+add [y_dig], 2
+call draw_pixel_digit
+inc [x_dig]
+call draw_pixel_digit
+inc [x_dig]
+call draw_pixel_digit
+inc [x_dig]
+inc [y_dig]
+call draw_pixel_digit
+dec [x_dig]
+inc [y_dig]
+call draw_pixel_digit
+dec [x_dig]
+call draw_pixel_digit
+add [x_dig], 2
+inc [y_dig]
+call draw_pixel_digit
+dec [x_dig]
+inc [y_dig]
+call draw_pixel_digit
+dec [x_dig]
+call draw_pixel_digit
+dec [x_dig]
+call draw_pixel_digit
+ret
+endp d3
+
+proc d4
+add [x_dig], 3
+add [y_dig], 2
+call draw_pixel_digit
+inc [y_dig]
+call draw_pixel_digit
+inc [y_dig]
+call draw_pixel_digit
+inc [x_dig]
+call draw_pixel_digit
+inc [x_dig]
+call draw_pixel_digit
+inc [x_dig]
+call draw_pixel_digit
+inc [y_dig]
+call draw_pixel_digit
+inc [y_dig] 
+call draw_pixel_digit
+sub [y_dig], 5h
+inc [y_dig]
+call draw_pixel_digit
+inc [y_dig]
+call draw_pixel_digit
+ret
+endp d4
+
+proc d5
+add [x_dig], 5
+add [y_dig], 2
+call draw_pixel_digit
+dec [x_dig]
+call draw_pixel_digit
+dec [x_dig]
+call draw_pixel_digit
+dec [x_dig]
+inc [y_dig]
+call draw_pixel_digit
+inc [y_dig]
+call draw_pixel_digit
+inc [x_dig]
+call draw_pixel_digit
+inc [x_dig]
+call draw_pixel_digit
+inc [x_dig]
+inc [y_dig]
+call draw_pixel_digit
+dec [x_dig]
+inc [y_dig]
+call draw_pixel_digit
+dec [x_dig]
+call draw_pixel_digit
+dec [x_dig]
+call draw_pixel_digit
+ret
+endp d5
+
+proc d6
+add [x_dig], 5
+add [y_dig], 2
+call draw_pixel_digit
+dec [x_dig]
+call draw_pixel_digit
+dec [x_dig]
+call draw_pixel_digit
+dec [x_dig]
+call draw_pixel_digit
+inc [y_dig]
+call draw_pixel_digit
+inc [y_dig]
+call draw_pixel_digit
+inc [x_dig]
+call draw_pixel_digit
+inc [x_dig]
+call draw_pixel_digit
+inc [x_dig]
+call draw_pixel_digit
+inc [y_dig]
+call draw_pixel_digit
+inc [y_dig]
+call draw_pixel_digit
+dec [x_dig]
+call draw_pixel_digit
+dec [x_dig]
+call draw_pixel_digit
+dec [x_dig]
+call draw_pixel_digit
+dec [y_dig]
+call draw_pixel_digit
+ret
+endp d6
+
+proc d7
+add [x_dig], 3
+add [y_dig], 2
+call draw_pixel_digit
+inc [x_dig]
+call draw_pixel_digit
+inc [x_dig]
+call draw_pixel_digit
+inc [x_dig]
+call draw_pixel_digit
+inc [y_dig]
+call draw_pixel_digit
+dec [x_dig]
+inc [y_dig]
+call draw_pixel_digit
+dec [x_dig]
+inc [y_dig]
+call draw_pixel_digit 
+inc [y_dig]
+call draw_pixel_digit
+ret
+endp d7
+
+proc d8
+add [x_dig], 5
+add [y_dig], 3
+call draw_pixel_digit
+dec [y_dig]
+call draw_pixel_digit
+dec [x_dig]
+call draw_pixel_digit
+dec [x_dig]
+call draw_pixel_digit
+dec [x_dig]
+call draw_pixel_digit
+inc [y_dig]
+call draw_pixel_digit
+inc [y_dig]
+call draw_pixel_digit
+inc [x_dig]
+call draw_pixel_digit
+inc [x_dig]
+call draw_pixel_digit
+inc [x_dig]
+call draw_pixel_digit
+inc [y_dig]
+call draw_pixel_digit
+inc [y_dig]
+call draw_pixel_digit
+dec [x_dig]
+call draw_pixel_digit
+dec [x_dig]
+call draw_pixel_digit
+dec [x_dig]
+call draw_pixel_digit
+dec [y_dig]
+call draw_pixel_digit
+ret
+endp d8
+;; why did i do this
+
+proc draw_digits
+pusha
+cmp [num_color], 0
+je finish_drawing
+cmp [num_color], 1
+je n1
+cmp [num_color], 2
+je n2
+cmp [num_color], 3
+je n3
+cmp [num_color], 4
+je n4
+cmp [num_color], 5
+je n5
+cmp [num_color], 6
+je n6
+cmp [num_color], 7
+je n7
+cmp [num_color], 8
+je n8
+
+n1:
+call d1
+jmp finish_drawing
+n2:
+call d2
+jmp finish_drawing
+n3:
+call d3
+jmp finish_drawing
+n4:
+call d4
+jmp finish_drawing
+n5:
+call d5
+jmp finish_drawing
+n6:
+call d6
+jmp finish_drawing
+n7:
+call d7
+jmp finish_drawing
+n8:
+call d8
+jmp finish_drawing
+finish_drawing:
+
+popa
+ret
+endp draw_digits
+
+
 
 proc draw_tile
 ;hang on tight you sombiches
@@ -229,10 +538,11 @@ call getindex
 mov [hover_color], 8h
 mov si, [index_in_board]
 mov ax, [si]
-cmp ax, 0d000h
+cmp ah, 0d0h
 je revealed
 jmp is_mine
-revealed:
+
+revealed: 
 mov [hover_color], 7h
 jmp begin
 
@@ -244,7 +554,9 @@ cmp ah, 0f0h
 jne begin
 mov [hover_color], 0;remove for game
 ;dont remove
-inc [minesplaced]
+add [minesplaced], 1d
+
+
 
 begin:
 
@@ -410,6 +722,9 @@ inc [tile]
 loop line_10
 
 sub [tile], 90ah
+
+
+
 call getindex
 mov si, [index_in_board]
 mov ax, [si]
@@ -420,8 +735,31 @@ mov [y_flag], 3
 add [y_flag], bh
 mov [x_flag], bl
 call drawflag
-finish:
 
+
+finish:
+;;;*takes off sunglasses*
+;ma gawd in heaven,
+;it works
+;IT WORKS
+;ITS ALIVE
+call get_tile_number
+call getindex
+mov si, [index_in_board]
+mov ax, [si]
+cmp ah, 0d0h
+jne finish1
+xor bx,bx
+mov bl, al
+mov [num_color], bx
+mov bx, [tile]
+mov [x_dig], bl
+mov [y_dig], bh
+call draw_digits
+mov [x_dig], 0
+mov [y_dig], 0
+finish1:
+mov [color], 7h
 popa
 ret
 endp draw_tile 
@@ -434,6 +772,7 @@ mov cx, 20
 mov [counter], 0
 line1:
 call draw_tile
+
 add [tile], 10d
 loop line1
 add [tile], 938h
@@ -443,10 +782,10 @@ cmp [counter], 20
 jl line1
 mov [tile], 0
 
-popa 
+popa
 ret
 endp draw_board
-
+; put segment number in register es
 proc readmouse
 pusha
 mov ax,3h
@@ -457,13 +796,17 @@ mov [read_y], dl
 mov [mouse_state], bx
 popa
 ret
-endp readmouse
+endp readmouse;
+; put segment number in register es
 
 proc leftclick
 pusha
 mov [hover_color], 4h
 call getindex
 mov si, [index_in_board]
+mov ax, [si]
+cmp ah, 0f0h
+je exit 
 mov ax, 0d000h
 mov [si], ax         ;
 popa
@@ -561,6 +904,88 @@ popa
 ret
 endp drawflag
 
+proc printNumber
+pusha
+;sets cursor on  the corner
+mov dh, 19 ; row
+mov dl, 35  ; column
+mov bh, 0   ; page number
+mov ah, 2
+int 10h
+mov al, [minesplaced]
+xor dx, dx
+div [ten]
+mov cx, dx
+mov dx, cx
+mov ah, 2h
+int 21h
+add dx, '0'
+xor dh, dh
+mov ah, 2h
+int 21h
+
+popa
+    ret 
+endp printNumber
+
+proc get_tile_number
+pusha
+call getindex
+mov si, [index_in_board]
+mov ax, [si]
+cmp ah, 0f0h
+je no_num
+mov ax, [si]
+cmp al, 0e0h
+je no_num
+
+
+
+mov ax, [si+2]
+call addoneif
+
+mov ax, [si-2]
+call addoneif
+
+mov ax, [si+40]
+call addoneif
+
+mov ax, [si-40]
+call addoneif
+
+mov ax, [si+42]
+call addoneif
+
+mov ax, [si-38]
+call addoneif
+
+mov ax, [si-42]
+call addoneif
+
+mov ax, [si+38]
+call addoneif
+
+
+mov ax, [si]
+mov al, cl
+mov [si], ax 
+
+
+no_num:
+popa
+ret 
+endp get_tile_number
+
+proc addoneif
+cmp ah, 0f0h
+jne dont_add
+
+inc cx
+dont_add:
+
+ret
+endp addoneif
+
 
 start:
     mov ax, @data
@@ -576,10 +1001,12 @@ start:
     ; call draw_pixel
     ;call draw_tile
    
-    
+    call draw_board
+    ;call printNumber
     ;call placemines
 gameloop:
     ;call placemine
+   
     call draw_board
     call readmouse
     cmp [mouse_state], 3
