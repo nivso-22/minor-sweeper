@@ -5,26 +5,26 @@ STACK 100h
 jumps
 
 DATASEG
-board dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0f000h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0f000h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0ff00h, 0ff00h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0f000h, 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 
-dw 0f000h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
-dw 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+board dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0f000h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h 
+dw 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0f000h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0ff00h, 0ff00h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0f000h 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0f000h 
+dw 0f000h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
  
 str1 dw 'k', 13,10,'$'
  
@@ -60,6 +60,8 @@ minesplaced db 0d
 x_dig db 0
 y_dig db 0
 num_color dw 0
+
+index dw 0
 
 CODESEG
 proc printboard
@@ -102,7 +104,7 @@ proc random
     int 1ah
     ;mov ax, 40h
     ;mov es, ax
-; move random number to ax
+    ; put random number in es
     ;mov ax, [es:6Ch]
     mov ax, dx
     xor dx, dx
@@ -743,8 +745,11 @@ finish:
 ;it works
 ;IT WORKS
 ;ITS ALIVE
-call get_tile_number
 call getindex
+mov ax, [index_in_board]
+mov [index], ax
+call get_tile_number
+
 mov si, [index_in_board]
 mov ax, [si]
 cmp ah, 0d0h
@@ -798,6 +803,54 @@ popa
 ret
 endp readmouse;
 ; put segment number in register es
+proc reveal
+pusha
+mov si, [index]
+mov bx, [si]
+mov bh, 0d0h
+
+mov [si], bx
+call get_tile_number
+cmp bl,1h
+jae next3
+mov ax, [si+2]
+cmp ah,0ffh
+jne next
+mov[index], si
+add [index], 2
+call reveal
+sub [index], 2
+
+next:
+mov ax, [si-2]
+cmp ah,0ffh
+jne next1
+mov[index], si
+sub [index], 2
+call reveal
+add [index], 2
+next1:
+mov ax, [si-40]
+cmp ah,0ffh
+jne next2
+mov[index], si
+sub [index], 40
+call reveal
+add [index], 40
+next2:
+mov ax, [si+40]
+cmp ah,0ffh
+jne next3
+mov[index], si
+add [index], 40
+call reveal
+sub [index], 40
+next3:
+
+;do same shit with all directions
+popa
+ret
+endp reveal
 
 proc leftclick
 pusha
@@ -807,8 +860,8 @@ mov si, [index_in_board]
 mov ax, [si]
 cmp ah, 0f0h
 je exit 
-mov ax, 0d000h
-mov [si], ax         ;
+mov [index], si
+call reveal        ;
 popa
 ret
 endp leftclick
@@ -930,8 +983,8 @@ endp printNumber
 
 proc get_tile_number
 pusha
-call getindex
-mov si, [index_in_board]
+
+mov si, [index]
 mov ax, [si]
 cmp ah, 0f0h
 je no_num
