@@ -1064,7 +1064,7 @@ pusha
     mov ax, [corrects]
     ;dec [corrects]
     cmp al, [minesplaced]
-    jae nowin
+    jl nowin
     mov ah, 00h
     mov al, 03h
     int 10h
