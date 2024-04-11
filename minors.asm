@@ -5,26 +5,31 @@ STACK 100h
 jumps
 
 DATASEG
-board dw 0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h
-dw 0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h
-dw 0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h
-dw 0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h
-dw 0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h
-dw 0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h
-dw 0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h
-dw 0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h
-dw 0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h
-dw 0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h
-dw 0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h
-dw 0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h
-dw 0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h
-dw 0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h
-dw 0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h
-dw 0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h
-dw 0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h
-dw 0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h
-dw 0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h
-dw 0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h,0ff00h
+board dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h,
+ 
+
+ 
+
+
 
 rowEnd db 13, 10, '$'  ; New line characters for DOS
 
@@ -64,7 +69,7 @@ row_loop:
     column_loop:
     mov ax, [si]          ; Get the matrix element (assuming it's small enough to be a single digit)
     add ax, '0'           ; Convert to ASCII
-    mov dl, al            ; Prepare DL for output
+    mov dl, ah            ; Prepare DL for output
     mov ah, 02h           ; DOS function: Print character
     int 21h               ; Call DOS interrupt
     
@@ -222,14 +227,23 @@ call getindex
 mov [hover_color], 8h
 mov si, [index_in_board]
 mov ax, [si]
-cmp ax, 0dh
+cmp ax, 0d000h
 je revealed
-jmp begin
+jmp is_mine
 revealed:
 mov [hover_color], 7h
+jmp begin
 
+is_mine:
+call getindex
+mov si, [index_in_board]
+mov ax, [si]
+cmp ax, 0f000h 
+jne begin
+mov [hover_color], 0
 
 begin:
+
 mov cx, 10d
 line_1:
 call draw_pixel
@@ -435,7 +449,7 @@ pusha
 mov [hover_color], 4h
 call getindex
 mov si, [index_in_board]
-mov ax, 0dh
+mov ax, 0d000h
 mov [si], ax         ;
 popa
 ret
@@ -446,9 +460,7 @@ pusha
 mov [hover_color], 9h
 call getindex
 mov si, [index_in_board]
-mov bx, si
-mov al, 0eh
-mov ah, bh
+mov ax, 0e000h
 mov [si], ax         
 popa
 ret
@@ -543,7 +555,7 @@ start:
     ;call draw_tile
    
     
-    call placemines
+    ;call placemines
 gameloop:
     ;call placemine
     call draw_board
