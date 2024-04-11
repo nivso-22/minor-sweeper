@@ -180,8 +180,10 @@ proc draw_pixel_flag
 pusha
 
     xor bh, bh  ; bh = 0
-    add dl, [y_flag]
-    add cl, [x_flag]
+    xor cx, cx
+    xor dx, dx
+    mov dl, [y_flag]
+    mov cl, [x_flag]
     mov ax, [color]
     mov ah, 0ch
     int 10h
@@ -238,9 +240,11 @@ is_mine:
 call getindex
 mov si, [index_in_board]
 mov ax, [si]
-cmp ax, 0f000h 
+cmp ah, 0f0h 
 jne begin
-mov [hover_color], 0
+mov [hover_color], 0;remove for game
+;dont remove
+inc [minesplaced]
 
 begin:
 
@@ -406,6 +410,17 @@ inc [tile]
 loop line_10
 
 sub [tile], 90ah
+call getindex
+mov si, [index_in_board]
+mov ax, [si]
+cmp al, 0e0h
+jne finish
+mov bx, [tile]
+mov [y_flag], 3
+add [y_flag], bh
+mov [x_flag], bl
+call drawflag
+finish:
 
 popa
 ret
@@ -460,8 +475,10 @@ pusha
 mov [hover_color], 9h
 call getindex
 mov si, [index_in_board]
-mov ax, 0e000h
-mov [si], ax         
+mov bx, [si]
+mov al, 0e0h
+mov bl, al
+mov [si], bx         
 popa
 ret
 endp rightclick
@@ -499,14 +516,16 @@ ret
 endp getindex
 
 proc waitforchar
+pusha
 mov ah, 0h
 int 16h
+popa
 ret
 endp waitforchar
 
 proc drawflag
-popa
-
+pusha
+ 
     add [x_flag], 3
     mov [color], 4h
     call draw_pixel_flag
@@ -535,7 +554,10 @@ popa
     call draw_pixel_flag
     dec [x_flag]
     call draw_pixel_flag
-    pusha
+    mov [color], 7h
+    mov [x_flag], 0
+    mov [y_flag], 0
+popa    
 ret
 endp drawflag
 
