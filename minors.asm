@@ -5,28 +5,33 @@ STACK 100h
 jumps
 
 DATASEG
-board dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
-dw 0f000h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h 
-dw 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
-dw 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
-dw 0f000h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
-dw 0ff00h, 0ff00h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
-dw 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
-dw 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+board dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
 dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
-dw 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0f000h 
-dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0f000h 
-dw 0f000h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
-dw 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+dw 0ff00h, 0f000h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h, 0ff00h 
+
+
+
+
+
  
-str1 dw 'k', 13,10,'$'
+winscreen db 'you won', 13,10,'$'
  
 
 
@@ -62,6 +67,7 @@ y_dig db 0
 num_color dw 0
 
 index dw 0
+corrects dw 0
 
 CODESEG
 proc printboard
@@ -556,7 +562,7 @@ cmp ah, 0f0h
 jne begin
 mov [hover_color], 0;remove for game
 ;dont remove
-add [minesplaced], 1d
+inc [minesplaced]
 
 
 
@@ -771,6 +777,7 @@ endp draw_tile
 
 proc draw_board
 pusha
+mov [minesplaced], 0 
 mov ax,2h
 int 33h
 mov cx, 20
@@ -786,11 +793,11 @@ mov cx, 20
 cmp [counter], 20
 jl line1
 mov [tile], 0
-
+call checkwin
 popa
 ret
 endp draw_board
-; put segment number in register es
+
 proc readmouse
 pusha
 mov ax,3h
@@ -802,8 +809,13 @@ mov [mouse_state], bx
 popa
 ret
 endp readmouse;
-; put segment number in register es
-proc reveal
+
+proc reveal; i am a god how does this work
+; why does it work
+; im the greatest
+; recursion? how does it work(i.e. magnets)
+; HOW DOES THIS WORK THIS SHOULDNT WORK BUT IT DOES
+; this is probably the best piece of assembly code ive ever written
 pusha
 mov si, [index]
 mov bx, [si]
@@ -872,9 +884,17 @@ mov [hover_color], 9h
 call getindex
 mov si, [index_in_board]
 mov bx, [si]
+cmp bh, 0f0h
+jne incorrect
+inc [corrects]
+incorrect:
 mov al, 0e0h
+cmp bl, al
+je endrc
 mov bl, al
-mov [si], bx         
+mov [si], bx   
+
+endrc:      
 popa
 ret
 endp rightclick
@@ -1039,6 +1059,25 @@ dont_add:
 ret
 endp addoneif
 
+proc checkwin
+pusha
+    mov ax, [corrects]
+    ;dec [corrects]
+    cmp al, [minesplaced]
+    jae nowin
+    mov ah, 00h
+    mov al, 03h
+    int 10h
+    mov dx, offset winscreen
+    mov ah, 9h
+    int 21h
+    jmp exit
+nowin:
+    
+popa
+ret
+endp checkwin
+
 
 start:
     mov ax, @data
@@ -1064,7 +1103,9 @@ gameloop:
     call readmouse
     cmp [mouse_state], 3
     je out1
+    
     jmp gameloop
+    
     out1: 
     mov ax, 2h
     int 10h
