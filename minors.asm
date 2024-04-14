@@ -143,11 +143,7 @@ winscreen db 'you won', 13,10,'$'
 
 rowEnd db 13, 10, '$'  ; New line characters for DOS
 
-selecteditemx db 10
-selecteditemy db 10
-num db 0
-cxsaver dw 0
-lpidx dw 0
+
 tile dw 0000h
 color dw 8h
 hover_color dw 0fh 
@@ -156,16 +152,11 @@ read_x db 0
 read_y db 0
 mouse_state dw 0
 ten dw 10
-rnd dw 0
-
 index_in_board dw 0
-has_flag dw 0
 x_flag db 0
 y_flag db 0
-
 boardcounter dw 0
 minesplaced db 0d
-
 x_dig db 0
 y_dig db 0
 num_color dw 0
@@ -544,9 +535,10 @@ endp draw_digits
 
 
 proc draw_tile
-;hang on tight you sombiches
+; hang on tight you sombiches
+; this will be a ride of a lifetime
 pusha
-call readmouse
+call readmouse;this calculates if the mouse is on the correct tile via dark arcane magic
 mov cx, [tile]
 add cx, 10
 sub cl, [read_x]
@@ -580,7 +572,7 @@ call getindex
 mov [hover_color], 8h
 mov si, [index_in_board]
 mov ax, [si]
-cmp ah, 0d0h
+cmp ah, 0d0h; this line oh my god let me tell you
 je revealed
 jmp is_mine
 
@@ -594,14 +586,10 @@ mov si, [index_in_board]
 mov ax, [si]
 cmp ah, 0f0h 
 jne begin
- mov [hover_color], 0;remove for game
-;dont remove
+mov [hover_color], 0h;remove for game
 
 
-
-
-
-begin:
+begin:; ok dude this is your last chance to go away you will need eye bleach
 
 mov cx, 10d
 line_1:
@@ -616,7 +604,8 @@ call draw_pixel
 inc [tile]
 mov cx, 8d
 mov ax, [hover_color]
-mov [color], ax
+mov [color], ax; no i am not sorry
+; not anymore
 
 line_2:
 call draw_pixel
@@ -672,6 +661,7 @@ inc [tile]
 mov cx, 8d
 mov ax, [hover_color]
 mov [color], ax
+;still not fucking sorry
 
 line_5:
 call draw_pixel
@@ -765,9 +755,10 @@ inc [tile]
 loop line_10
 
 sub [tile], 90ah
-
-; this
-
+; ok it was sorta normal right?
+; WRONG
+; VERY WRONG
+; prepare yourself
 call getindex
 mov si, [index_in_board]
 mov ax, [si]
@@ -823,7 +814,7 @@ int 33h
 mov cx, 20
 mov [counter], 0
 line1:
-call draw_tile
+call draw_tile; outside this procedure looks so innocent
 
 add [tile], 10d
 loop line1
@@ -838,7 +829,7 @@ popa
 ret
 endp draw_board
 
-proc readmouse
+proc readmouse;it fucking reads the mouse dude what did you think
 pusha
 mov ax,3h
 int 33h
@@ -903,6 +894,9 @@ next3:
 popa
 ret
 endp reveal
+; i am still in complete disbelief of the fact that this works
+; everything here shouldnt work and yet it does
+
 ; fuck around
 proc leftclick
 pusha
@@ -918,7 +912,8 @@ popa
 ret
 endp leftclick
 
-proc rightclick
+proc rightclick; i wonder what could this procedure possibly do 
+; ITS FUCKING CALLED RIGHT CLICK WHAT DO YOU THINK IT DOES
 pusha
 mov [hover_color], 9h
 call getindex
@@ -939,7 +934,7 @@ popa
 ret
 endp rightclick
 ; find the fuck out
-proc getindex
+proc getindex; this procedure is also magic all i know is it is a black box that gives me the index in the board from [tile]
 pusha
 mov si, [index_in_board]
 mov bx, [tile]
@@ -969,9 +964,9 @@ mov [index_in_board], si
 mov si, 0h
 popa
 ret
-endp getindex
+endp getindex;it be doing that nerd shit all the math
 
-proc waitforchar
+proc waitforchar;this is not necessary but i like it
 pusha
 mov ah, 0h
 int 16h
@@ -979,7 +974,7 @@ popa
 ret
 endp waitforchar
 
-proc drawflag
+proc drawflag; i was happy until the day i wrote this procedure
 pusha
     add [x_flag], 3
     mov [color], 4h
@@ -1014,14 +1009,18 @@ pusha
     mov [y_flag], 0
 popa    
 ret
-endp drawflag
+endp drawflagl; and realised im the dumbest MF to ever walk the earth like a month later
+; YOU CANT TO TAKE A MEMORY ADRESS OF @ BYTES AND WRITE ONLY ONE TO IT
+; IF ONLY THIS LANGUAGE COULD DETECT WHEN READ AND WRITE SIZE ARE INCOMPATIBLE
+; BUT NO
+; FUCK ME
+; OMG YOU DO NOT UNDERSTAND HOW MAD I WAS
 
-proc printNumber
+proc printNumber;why is this here
 pusha
-;sets cursor on  the corner
-mov dh, 19 ; row
-mov dl, 35  ; column
-mov bh, 0   ; page number
+mov dh, 19 ; 
+mov dl, 35  ;
+mov bh, 0   ;
 mov ah, 2
 int 10h
 mov al, [minesplaced]
@@ -1040,7 +1039,7 @@ popa
     ret 
 endp printNumber
 
-proc get_tile_number
+proc get_tile_number; they said i couldnt do it so i went and - 
 pusha
 
 mov si, [index]
@@ -1086,9 +1085,10 @@ mov [si], ax
 no_num:
 popa
 ret 
-endp get_tile_number
+endp get_tile_number; did it 
+; did it
 
-proc addoneif
+proc addoneif;you laugh but this is ingenius this saves so much time
 cmp ah, 0f0h
 jne dont_add
 
@@ -1098,7 +1098,7 @@ dont_add:
 ret
 endp addoneif
 
-proc checkwin
+proc checkwin; shrodingers procedure
 pusha
     mov ax, [corrects]
     cmp al, [minesplaced]
@@ -1114,7 +1114,7 @@ nowin:
     
 popa
 ret
-endp checkwin
+endp checkwin; you dont know if it works until you finish that specific round and see what it decided to do that iteration of the code
 
 
 start:
@@ -1146,50 +1146,47 @@ start:
     cmp al, 'h'
     je hard
     cmp al, 'd'
-    je extra_hard
+    je extra_hard; hehe very hard just like me
     
 easy:    
     mov si, offset board_easy
     mov [boardoffset], si
-    mov [minesplaced], 12
+    mov [minesplaced], 13
 jmp startgame
 
 medium:    
     mov si, offset board_medium
     mov [boardoffset], si
-    mov [minesplaced], 30
+    mov [minesplaced], 31
 jmp startgame
 
 hard:    
     mov si, offset board_hard
     mov [boardoffset], si
-    mov [minesplaced], 60
+    mov [minesplaced], 61
 jmp startgame
 
 extra_hard:    
     mov si, offset board_extra_hard
     mov [boardoffset], si
-    mov [minesplaced], 100
+    mov [minesplaced], 101
 jmp startgame
-
+; code written by an artisan what can i say
     
 startgame:
    
     mov ax, 13h
     int 10h
     call draw_board
-    ;call printNumber
-    ;call placemines
     
 gameloop:
-    ;call placemine
-   
+    
     call draw_board
     call readmouse
-    cmp [mouse_state], 3
+    cmp [mouse_state], 3;this game loop is so simple because all the hard shit is in draw_tile and reveal
     je out1
     
-    jmp gameloop
+    jmp gameloop;
     
     out1: 
     mov ax, 2h
@@ -1199,4 +1196,7 @@ gameloop:
 exit:
     mov ax, 4c00h
     int 21h
-    END start
+    END start; at least this trainwreck of a project was fun sometimes i guess
+    ; #THE_REAL_MINES_WERE_THE_FRIENDS_WE_MADE_ALONG_THE_WAY
+    ; #LUCKILY_I_LOST_FRIENDS_DURING_THIS
+    
