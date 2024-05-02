@@ -1,4 +1,4 @@
-
+.586
 IDEAL
 MODEL small
 STACK 100h
